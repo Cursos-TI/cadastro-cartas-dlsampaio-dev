@@ -17,6 +17,7 @@ int main() {
     int pontos_01; // Número de pontos turísticos
     float densidade_pop_01; // Desidade Populacional = População / Área Cidade
     float pib_percapta_01; // PIB / População
+    float super_poder_01; // Soma de todos os atributos númerico.
 
     // Carta 02 Informação
 
@@ -29,7 +30,8 @@ int main() {
     int pontos_02; // Número de pontos turísticos
     float densidade_pop_02; // Desnsidade Populacional = População / Área Cidade
     float pib_percapta_02; // PIB / População
-    
+    float super_poder_02; // Soma de todos os atributos númericos.
+
   // Área para entrada de dados
     // *** Entrada e Saída Carta 01 ***
 
@@ -97,6 +99,8 @@ int main() {
     pib_percapta_01 = pib_01 / populacao_01; // Nível Aventureiro
     printf("Desidade Populacional: %.2f reais\n", densidade_pop_01);
     printf("PIB per capita: %.2f reais\n", pib_percapta_01);
+    super_poder_01 = (float) populacao_01 + area_01 + pib_01 + (float) pontos_01 + densidade_pop_01 + pib_percapta_01; 
+    printf("Super Poder: %.2f", super_poder_01);
 
     printf("\n\n");
 
@@ -112,7 +116,8 @@ int main() {
     pib_percapta_02 = pib_02 / populacao_02; // Nível Aventureiro
     printf("Densidade Populacional: %.2f reais\n", densidade_pop_02);
     printf("PIB per capita: %.2f reais\n", pib_percapta_02);
-
+    super_poder_02 = (float) populacao_02 + area_02 + pib_02 + (float) pontos_02 + densidade_pop_02 + pib_percapta_02;
+    printf("Super poder: %.2f\n", super_poder_02);
 
 return 0;
 } 
