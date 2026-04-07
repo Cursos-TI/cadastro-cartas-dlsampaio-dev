@@ -93,8 +93,8 @@ int main() {
     printf("Area: %.2f m2\n", area_01);
     printf("PIB: %.2f bilhoes de reais\n", pib_01);
     printf("Numero de Pontos Turisticos: %d\n", pontos_01);
-    densidade_pop_01 = populacao_01 / area_01;
-    pib_percapta_01 = pib_01 / populacao_01;
+    densidade_pop_01 = populacao_01 / area_01; // Nivel Aventureiro
+    pib_percapta_01 = pib_01 / populacao_01; // Nível Aventureiro
     printf("Desidade Populacional: %.2f reais\n", densidade_pop_01);
     printf("PIB per capita: %.2f reais\n", pib_percapta_01);
 
@@ -108,8 +108,8 @@ int main() {
     printf("Area: %.2f m2\n", area_02);
     printf("PIB: %.2f bilhoes de reais\n", pib_02);
     printf("Numero de Pontos Turisticos: %d\n", pontos_02);
-    densidade_pop_02 = populacao_02 / area_02;
-    pib_percapta_02 = pib_02 / populacao_02;
+    densidade_pop_02 = populacao_02 / area_02; // Nível Aventureiro
+    pib_percapta_02 = pib_02 / populacao_02; // Nível Aventureiro
     printf("Densidade Populacional: %.2f reais\n", densidade_pop_02);
     printf("PIB per capita: %.2f reais\n", pib_percapta_02);
 
