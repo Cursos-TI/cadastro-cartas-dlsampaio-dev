@@ -95,13 +95,18 @@ int main() {
     printf("Area: %.2f m2\n", area_01);
     printf("PIB: %.2f bilhoes de reais\n", pib_01);
     printf("Numero de Pontos Turisticos: %d\n", pontos_01);
+    
+    // Calculo da Densidade Populacional e PIB Percapta
     densidade_pop_01 = populacao_01 / area_01; // Nivel Aventureiro
     pib_percapta_01 = pib_01 / populacao_01; // Nível Aventureiro
     printf("Desidade Populacional: %.2f reais\n", densidade_pop_01);
     printf("PIB per capita: %.2f reais\n", pib_percapta_01);
+    
+    // Calculo do Super Poder
     super_poder_01 = (float) populacao_01 + area_01 + pib_01 + (float) pontos_01 + densidade_pop_01 + pib_percapta_01; 
     printf("Super Poder: %.2f", super_poder_01);
 
+    
     printf("\n\n");
 
     printf("Carta 2: \n\n");
@@ -112,12 +117,98 @@ int main() {
     printf("Area: %.2f m2\n", area_02);
     printf("PIB: %.2f bilhoes de reais\n", pib_02);
     printf("Numero de Pontos Turisticos: %d\n", pontos_02);
+
+    // Calculo da Densidade Populacional e PIB Percapta
     densidade_pop_02 = populacao_02 / area_02; // Nível Aventureiro
     pib_percapta_02 = pib_02 / populacao_02; // Nível Aventureiro
     printf("Densidade Populacional: %.2f reais\n", densidade_pop_02);
     printf("PIB per capita: %.2f reais\n", pib_percapta_02);
+
+    // Calculo do Super Poder
     super_poder_02 = (float) populacao_02 + area_02 + pib_02 + (float) pontos_02 + densidade_pop_02 + pib_percapta_02;
     printf("Super poder: %.2f\n", super_poder_02);
 
-return 0;
+
+  printf("\n\n");
+
+  // As informações numericas utilizadas são do material do Profº Sergio Cardoso
+  // Comparar Cartas
+
+    //Populacao  
+    if (populacao_01 > populacao_02)
+    {
+      printf("Populacao: Carta 1 Venceu (1)\n");
+    }
+    else
+    {
+      printf("Carta 2 Venceu (0)\n");
+    }
+    
+    // Área
+    if (area_01 > area_02)
+    {
+      printf("Area: Carta 1 Venceu (1)\n");
+    }
+    else 
+    {
+      printf("Area: Carta 2 Venceu (0)\n");
+    }
+
+    // PIB
+    if (pib_01 > pib_02)
+    {
+      printf("PiB: Carta 1 Venceu (1)\n");
+    }
+    else 
+    {
+      printf("PIB:  Carta 2 Venceu (0)\n");
+    }
+    
+    // Pontos Turisticos
+    if (pontos_01 > pontos_02)
+    {
+      printf("Pontos Turisticos: Carta 1 Venceu (1)\n");
+    }
+    else
+    {
+      printf("Pontos Turisticos: Carta 2 Venceu (0)\n");
+    }
+
+    // Densidade Populacional
+    if (densidade_pop_01 < densidade_pop_02)
+    {
+      printf("Densidade Populacional: Carta 1 Venceu (1)\n");
+    }
+    else
+    {
+      printf("Densidade Populacional: Carta 2 Venceu (0)\n");
+    }
+
+    // PiB Per Capita
+    if (pib_percapta_01 > pib_percapta_02) 
+    {
+      printf("PIB per Capita: Carta 1 Venceu (1)\n");
+    }
+    else
+    {
+      printf("PIB per Capita: Carta 2 Venceu (0)\n");
+    }
+
+    // Super Poder
+    if (super_poder_01 > super_poder_02)
+    {
+      printf("Super Poder: Carta 1 Venceu (1)\n");
+    }
+    else
+    {
+      printf("Super Poder: Carta 2 Venceu (0)\n");
+    }
+    
+    printf("\n\n");
+
+    printf("A direção é mais importante que a velocidade.\n");
+    printf("Obrigado Profº Sergio Cardoso");
+
+    return 0;
+
 } 
